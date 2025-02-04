@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* CountUp */
+
+@property --num-users {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @property --num-reg-users {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @property --num-percent {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @keyframes counter {
+    from {
+        --num-users: 0;
+        --num-reg-users: 0;
+        --num-percent:0;
+    }
+    to {
+        --num-users: 50;
+        --num-reg-users: 5;
+        --num-percent:10;
+    }
+  }
+
+
+
+  .menu li {}
+  
+  .menu a {
+    padding: .5em .8em;
+    color: #ffffffb3;
+    position: relative;
+  }
+  
+  .menu a::before,
+  .menu a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .menu a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transform: translate(-100%, 50%);
+    transition: all ease .5s;
+  }
+  
+  .menu a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    transform: translate(100%, -50%);
+    transition: all ease .5s;
+  }
+  
+  .menu a:hover:before,
+  .menu a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .menu a:hover {
+    color: white;
+  }
+  
+

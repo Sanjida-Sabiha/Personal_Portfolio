@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SABIHA</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+</head>
+<body class="">
+    <!-- Go to Top button -->
+    <button id="goToTopBtn" class="fixed bottom-10 md:right-8 right-4 bg-[#1baa80] text-white px-3 py-3 rounded-full hidden z-[999] transition-opacity duration-75">
+        <svg class="rotate-180 md:size-5 size-3" width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 1L5.5 5L9.5 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+
+    <!-- Header Area Start Here -->
+    <header class="relative z-50 w-full bg-cover bg-center bg-no-repeat" style="background-image: url('assets/img/bg.png');">
+        <div class="absolute -z-20 w-full h-full top-0 left-0 bg-black bg-opacity-85">  
+        </div>
+        <div class="container">
+            <div class="flex justify-between items-center py-5">
+                <a href="#" class="font-font_grotesk text-white font-semibold md:text-30xl text-24xl leading-34 md:leading-40">SABIHA</a>
+                <div class="hidden lg:block">
+                    <ul class="flex gap-4 items-center menu">
+                        <li><a href="#" class="font-font_grotesk font-normal text-white text-opacity-70">Home</a></li>
+                        <li><a href="#about" class="font-font_grotesk font-normal text-white text-opacity-70">About</a></li>
+                        <li><a href="#services" class="font-font_grotesk font-normal text-white text-opacity-70">Services</a></li>
+                        <li><a href="#projects" class="font-font_grotesk font-normal text-white text-opacity-70">Projects</a></li>
+                        <li><a href="#review" class="font-font_grotesk font-normal text-white text-opacity-70">Reviews</a></li>
+                        <li><a href="#contact" class="font-font_grotesk font-normal text-white text-opacity-70">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Menu button for mobile -->
+                <div class="flex items-center lg:hidden sm:block">
+                    <button id="mobileMenuButton" class="focus:outline-none">
+                        <svg id="menuIcon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                            <path id="menuOpenIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            <path id="menuCloseIcon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="bg-white border-b border-b-gray-50 hidden rounded m-5 transition-height transition-all duration-1000 ease-in-out overflow-hidden absolute inset-x-0 top-12 z-20 bg-cardBg">
+                <div class="py-5">
+                    <ul class="dropdown flex flex-col gap-y-4 px-5">
+                        <li><a href="#" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Home</a></li>
+                        <li><a href="#" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">About</a></li>
+                        <li><a href="#" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Services</a></li>
+                        <li><a href="#" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Projects</a></li>
+                        <li><a href="#" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Review</a></li>
+                        <li><a href="#" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center lg:w-850 w-full mx-auto lg:py-[150px] md:py-[70px] py-[50px]">
+                <h4 class="font-font_grotesk font-medium md:text-24xl text-lg leading-8 md:leading-34 text-white">Hello, I am</h4>
+                <h1 class="font-font_grotesk font-bold md:text-98xl text-44xl leading-54 md:leading-112 text-white pt-4">Sanjida Sabiha</h1>
+                <p class="font-font_grotesk font-medium md:text-24xl text-lg leading-8 md:leading-34 text-white pt-4">I'm Web Developer</p>
+                <div class="flex items-center justify-center gap-[18px] md:mt-10 mt-7">
+                    <a href="https://www.facebook.com/sabiha.sanjida.402196" target="_blank" class="flex group bg-white bg-opacity-5 border border-white border-opacity-20 rounded-full md:w-11 w-8 h-8 md:h-11 items-center justify-center hover:bg-primaryColor hover:border-transparent hover:transition hover:ease-in-out hover:duration-500 transition ease-in-out duration-500">
+                        <svg class="md:w-auto w-3 h-3 md:h-auto " width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.34473 8.9995L9.86346 6.104H6.62096V4.225C6.62096 3.433 7.07375 2.6605 8.52608 2.6605H10V0.1955C10 0.1955 8.66262 0 7.38359 0C4.7135 0 2.96826 1.387 2.96826 3.8975V6.1045H0V9H2.96826V16H6.62096V9L9.34473 8.9995Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/sabihasanjida52/" target="_blank" class="flex group bg-white bg-opacity-5 border border-white border-opacity-20 rounded-full md:w-11 w-8 h-8 md:h-11 items-center justify-center hover:bg-primaryColor hover:border-transparent hover:transition hover:ease-in-out hover:duration-500 transition ease-in-out duration-500">
+                        <svg class="md:w-auto w-3 h-3 md:h-auto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.00015 -0.000244141C5.82743 -0.000244141 5.55499 0.0089732 4.70168 0.0478909C3.85016 0.0867371 3.26861 0.221996 2.75973 0.419729C2.23365 0.624177 1.7875 0.897744 1.34275 1.34249C0.897988 1.78723 0.624421 2.23343 0.419997 2.7595C0.222217 3.26836 0.0870051 3.84991 0.0481112 4.70143C0.00919353 5.55474 0 5.82719 0 7.99991C0 10.1726 0.00919353 10.445 0.0481112 11.2983C0.0870051 12.1499 0.222217 12.7314 0.419997 13.2403C0.624445 13.7663 0.898012 14.2125 1.34275 14.6573C1.78752 15.102 2.23365 15.3756 2.75973 15.58C3.26861 15.7778 3.85016 15.913 4.70168 15.9519C5.55499 15.9908 5.82743 16 8.00015 16C10.1728 16 10.4453 15.9908 11.2986 15.9519C12.1501 15.913 12.7317 15.7778 13.2405 15.58C13.7666 15.3756 14.2127 15.102 14.6575 14.6573C15.1023 14.2125 15.3758 13.7663 15.5803 13.2403C15.778 12.7314 15.9133 12.1499 15.9521 11.2983C15.991 10.445 16.0003 10.1726 16.0003 7.99991C16.0003 5.82719 15.991 5.55474 15.9521 4.70143C15.9133 3.84991 15.778 3.26836 15.5803 2.7595C15.3758 2.23343 15.1023 1.78723 14.6575 1.34249C14.2127 0.897744 13.7666 0.624177 13.2405 0.419729C12.7317 0.221996 12.1501 0.0867371 11.2986 0.0478909C10.4453 0.0089732 10.1728 -0.000244141 8.00015 -0.000244141ZM8.00015 1.44121C10.1362 1.44121 10.3893 1.44938 11.2329 1.48787C12.0129 1.52343 12.4365 1.65376 12.7184 1.76332C13.0918 1.90846 13.3583 2.0818 13.6382 2.36175C13.9182 2.6417 14.0916 2.90822 14.2367 3.28163C14.3463 3.56353 14.4766 3.98715 14.5121 4.76715C14.5506 5.61074 14.5588 5.86377 14.5588 7.99989C14.5588 10.136 14.5506 10.389 14.5121 11.2326C14.4766 12.0126 14.3463 12.4362 14.2367 12.7181C14.0916 13.0916 13.9182 13.3581 13.6382 13.638C13.3583 13.918 13.0918 14.0913 12.7184 14.2365C12.4365 14.346 12.0129 14.4763 11.2329 14.5119C10.3894 14.5504 10.1364 14.5586 8.00013 14.5586C5.86385 14.5586 5.61089 14.5504 4.76739 14.5119C3.98737 14.4763 3.56378 14.346 3.2819 14.2365C2.90844 14.0913 2.64195 13.918 2.36202 13.638C2.08207 13.3581 1.9087 13.0916 1.76356 12.7181C1.654 12.4362 1.5237 12.0126 1.48811 11.2326C1.44962 10.389 1.44145 10.136 1.44145 7.99989C1.44145 5.86377 1.44962 5.61074 1.48811 4.76715C1.5237 3.98713 1.654 3.56353 1.76356 3.28165C1.9087 2.9082 2.08207 2.6417 2.362 2.36178C2.64195 2.0818 2.90846 1.90846 3.28187 1.76332C3.56378 1.65376 3.98739 1.52343 4.76739 1.48787C5.61098 1.44938 5.86402 1.44121 8.00013 1.44121" fill="white"/>
+                            <path d="M8.00077 10.667C6.52795 10.667 5.33403 9.47309 5.33403 8.00032C5.33403 6.5275 6.52795 5.33358 8.00077 5.33358C9.47355 5.33358 10.6675 6.5275 10.6675 8.00032C10.6675 9.47309 9.47355 10.667 8.00077 10.667ZM8.00077 3.89212C5.73185 3.89212 3.89258 5.7314 3.89258 8.00032C3.89258 10.2692 5.73185 12.1085 8.00077 12.1085C10.2696 12.1085 12.1089 10.2692 12.1089 8.00032C12.1089 5.7314 10.2696 3.89212 8.00077 3.89212ZM13.2313 3.72981C13.2313 4.26003 12.8014 4.68982 12.2712 4.68982C11.7411 4.68982 11.3112 4.26003 11.3112 3.72981C11.3112 3.19961 11.7411 2.76978 12.2712 2.76978C12.8014 2.76978 13.2313 3.19961 13.2313 3.72981Z" fill="white"/>
+                        </svg>  
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/sanjida-sabiha-79615b220/" target="_blank" class="flex group bg-white bg-opacity-5 border border-white border-opacity-20 rounded-full md:w-11 w-8 h-8 md:h-11 items-center justify-center hover:bg-primaryColor hover:border-transparent hover:transition hover:ease-in-out hover:duration-500 transition ease-in-out duration-500">
+                        <svg class="" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2003 15.8783H18.8001V17.1733C19.1746 16.4285 20.135 15.7593 21.5777 15.7593C24.3434 15.7593 25 17.2419 25 19.9621V25H22.2V20.5816C22.2 19.0325 21.8255 18.1589 20.8721 18.1589C19.5498 18.1589 19.0003 19.1004 19.0003 20.5809V25H16.2003V15.8783ZM11.399 24.881H14.199V15.7593H11.399V24.881ZM14.6001 12.785C14.6002 13.0197 14.5537 13.2521 14.4632 13.4686C14.3727 13.6852 14.2401 13.8816 14.073 14.0464C13.7345 14.3828 13.2763 14.5712 12.799 14.57C12.3226 14.5697 11.8654 14.3818 11.5264 14.0471C11.3599 13.8817 11.2278 13.6851 11.1374 13.4685C11.0471 13.2519 11.0004 13.0197 11 12.785C11 12.3111 11.189 11.8575 11.5271 11.5229C11.8658 11.1877 12.3232 10.9998 12.7997 11C13.2771 11 13.7349 11.1883 14.073 11.5229C14.4104 11.8575 14.6001 12.3111 14.6001 12.785Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Sanjida-Sabiha" target="_blank" class="flex group bg-white bg-opacity-5 border border-white border-opacity-20 rounded-full md:w-11 w-8 h-8 md:h-11 items-center justify-center hover:bg-primaryColor hover:border-transparent hover:transition hover:ease-in-out hover:duration-500 transition ease-in-out duration-500">
+                        <svg class="md:w-auto w-5 h-5 md:h-auto" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">
+                            <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End Here -->
+
+    <!-- About Area Start Here -->
+    <section id="about" class="lg:mt-[150px] md:mt-20 mt-10">
+        <div class="container">
+            <div class="text-center relative">
+                <h4
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true"
+                class="font-font_grotesk text-secondaryColor text-opacity-5 font-semibold uppercase lg:text-[140px] md:text-118xl text-58xl leading-58 md:leading-118 lg:leading-[140px]">About Me</h4>
+                <p class="w-full absolute top-1/2 left-1/2 lg:text-58xl md:text-44xl text-30xl leading-40 md:leading-54 lg:leading-58 text-primaryColor font-font_grotesk font-semibold transform -translate-x-1/2 -translate-y-1/2">Know <span class="text-[#1baa80]">Me</span> More</p>
+            </div>
+            <div class="lg:mt-[70px] mt-7 flex lg:flex-row flex-col justify-between items-start lg:gap-[100px] gap-10">
+                <div class="lg:w-585 w-full">
+                    <h4 class="font-font_grotesk font-semibold md:text-24xl text-xl leading-8 md:leading-34 text-primaryColor">I'm <span class="text-[#1baa80]">Sanjida Sabiha</span>, Web Developer!</h4>
+                    <p class="font-font_grotesk font-normal text-secondaryColor text-base leading-7 pt-4">As a Web Application Developer, I possess a strong passion for crafting digital experiences that seamlessly blend functionality with aesthetics. With a solid foundation in programming languages such as HTML, CSS, and JavaScript, I thrive on translating innovative ideas into tangible online solutions.
+                        <br/>
+                        <br/>
+                        My experience encompasses both front-end and back-end development, allowing me to architect dynamic and responsive user interfaces while ensuring robust server-side functionality. Beyond technical skills, I am adept at collaborating with cross-functional teams, understanding user needs, and implementing efficient solutions that enhance user engagement and satisfaction.
+                    </p>
+                    <button class="mt-8 relative h-[60px] md:w-44 w-full bg-transparent overflow-hidden border border-borderColor text-primaryColor transition-all duration-300 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-primaryColor before:duration-500 before:ease-out hover:text-white hover:before:h-40 hover:before:md:w-44 hover:before:w-full">
+                        <a href="assets/img/Sanjida Sabiha_CV.pdf" class="font-font_grotesk md:inline-block block text-center font-medium text-lg leading-8 relative z-10" target="_blank">Download CV</a>
+                    </button>
+                </div>
+                <div class="lg:w-630 w-full"> 
+                    <div>
+                        <svg class="w-8 h-8" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" class="svg-inline--fa fa-html5 barIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="color: rgb(248, 13, 13);">
+                            <path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z">
+                            </path>
+                        </svg>
+                        <h4 class="font-font_grotesk font-medium text-base leading-8 text-primaryColor">HTML</h4>  
+                        <div class="relative w-full h-4 rounded-R_30 bg-secondaryColor bg-opacity-10 mt-2">
+                            <div class="progress-bar relative h-4 rounded-R_30 bg-[#1baa80] flex items-center justify-center text-white text-sm font-medium transition-all duration-[1500ms] ease-in-out"
+                                style="width: 0%;">
+                                90%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <svg class="w-8 h-8" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="css3-alt" class="svg-inline--fa fa-css3-alt barIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="color: rgb(12, 95, 237);"><path fill="currentColor" d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"></path></svg>
+                        <h4 class="font-font_grotesk font-medium text-base leading-8 text-primaryColor">CSS</h4>  
+                        <div class="relative w-full h-4 rounded-R_30 bg-secondaryColor bg-opacity-10 mt-2">
+                            <div class="progress-bar relative h-4 rounded-R_30 bg-[#1baa80] flex items-center justify-center text-white text-sm font-medium transition-all duration-[1500ms] ease-in-out"
+                                style="width: 0%;">
+                                90%
+                            </div>
+                        </div>                       
+                    </div>
+
+                    <div class="mt-6">
+                        <svg class="w-8 h-6" width="30" height="10" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 0c-4 0-6.5 2-7.5 6 1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C17.08 7.271 18.782 9 22.5 9c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C20.42 1.728 18.718 0 15 0ZM7.5 9C3.5 9 1 11 0 15c1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C9.58 16.271 11.282 18 15 18c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C12.92 10.729 11.218 9 7.5 9Z" fill="#38BDF8"></path></svg>
+                        <h4 class="font-font_grotesk font-medium text-base leading-8 text-primaryColor">Tailwind CSS</h4>  
+                        <div class="relative w-full h-4 rounded-R_30 bg-secondaryColor bg-opacity-10 mt-2">
+                            <div class="progress-bar relative h-4 rounded-R_30 bg-[#1baa80] flex items-center justify-center text-white text-sm font-medium transition-all duration-[1500ms] ease-in-out"
+                                style="width: 0%;">
+                                85%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <svg  class="w-8 h-8" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="bootstrap" class="svg-inline--fa fa-bootstrap barIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: rgb(91, 25, 215);"><path fill="currentColor" d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z"></path></svg>
+                        <h4 class="font-font_grotesk font-medium text-base leading-8 text-primaryColor">BootStrap</h4>  
+                        <div class="relative w-full h-4 rounded-R_30 bg-secondaryColor bg-opacity-10 mt-2">
+                            <div class="progress-bar relative h-4 rounded-R_30 bg-[#1baa80] flex items-center justify-center text-white text-sm font-medium transition-all duration-[1500ms] ease-in-out"
+                                style="width: 0%;">
+                                80%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <svg class="w-8 h-8" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="js" class="svg-inline--fa fa-js barIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="color: rgb(228, 199, 12);"><path fill="currentColor" d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"></path></svg>
+                        <h4 class="font-font_grotesk font-medium text-base leading-8 text-primaryColor">JavaScript</h4>  
+                        <div class="relative w-full h-4 rounded-R_30 bg-secondaryColor bg-opacity-10 mt-2">
+                            <div class="progress-bar relative h-4 rounded-R_30 bg-[#1baa80] flex items-center justify-center text-white text-sm font-medium transition-all duration-[1500ms] ease-in-out"
+                                style="width: 0%;">
+                                80%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <svg class="w-8 h-8" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="php" class="svg-inline--fa fa-php barIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="color: rgb(70, 51, 122);"><path fill="currentColor" d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"></path></svg>
+                        <h4 class="font-font_grotesk font-medium text-base leading-8 text-primaryColor">PHP</h4>  
+                        <div class="relative w-full h-4 rounded-R_30 bg-secondaryColor bg-opacity-10 mt-2">
+                            <div class="progress-bar relative h-4 rounded-R_30 bg-[#1baa80] flex items-center justify-center text-white text-sm font-medium transition-all duration-[1500ms] ease-in-out"
+                                style="width: 0%;">
+                                80%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <svg class="w-8 h-8" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="react" class="svg-inline--fa fa-react barIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color: rgb(24, 168, 216);"><path fill="currentColor" d="M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zM167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5 4.6 8.8 9.3 17.5 14.3 26.1zm-30.3-120.3c14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26-6.3-14.9-11.6-29.5-16-43.6zm27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7c8.5 12.6 16.6 25.5 24.3 38.7s14.9 26.7 21.7 40.4c-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4c-8.7-12.7-16.9-25.7-24.6-39s-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zm-149.7-15c25.3 0 45.8-20.5 45.8-45.8s-20.5-45.8-45.8-45.8c-25.3 0-45.8 20.5-45.8 45.8s20.5 45.8 45.8 45.8z"></path></svg>
+                        <h4 class="font-font_grotesk font-medium text-base leading-8 text-primaryColor">ReactJS</h4>  
+                        <div class="relative w-full h-4 rounded-R_30 bg-secondaryColor bg-opacity-10 mt-2">
+                            <div class="progress-bar relative h-4 rounded-R_30 bg-[#1baa80] flex items-center justify-center text-white text-sm font-medium transition-all duration-[1500ms] ease-in-out"
+                                style="width: 0%;">
+                                60%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Area End Here -->
+
+    <!-- Services Area Start Here -->
+    <section id="services" class="lg:mt-[150px] md:mt-20 mt-10 bg-[#1baa80] bg-opacity-15">
+        <div class="container">
+            <div class="lg:py-[100px] py-10">
+                <div class="text-center relative">
+                    <h4
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    data-aos-offset="20"
+                    data-aos-once="true"
+                    class="font-font_grotesk text-secondaryColor text-opacity-5 font-semibold uppercase lg:text-[140px] md:text-118xl text-58xl leading-58 md:leading-118 lg:leading-[140px]">Services</h4>
+                    <p class="w-full absolute top-1/2 left-1/2 lg:text-58xl md:text-44xl text-30xl leading-40 md:leading-54 lg:leading-58 text-primaryColor font-font_grotesk font-semibold transform -translate-x-1/2 -translate-y-1/2">What <span class="text-[#1baa80]">I</span> Do?</p>
+                </div>
+                <div class="flex lg:flex-row flex-col justify-between items-start gap-[30px] md:mt-[70px] mt-10">
+                    <div class="lg:w-410 w-full bg-white px-6 pt-2 pb-8 rounded-R_15">
+                        <div class="relative">
+                            <span class="inline-block text-[85px] text-secondaryColor text-opacity-15 font-font_grotesk font-semibold animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-users)] before:content-[counter(num)]"></span>        
+                            <h4 class="absolute top-1/2 left-[20px] text-primaryColor transform -translate-y-1/2"><svg class="w-10 h-10" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code" class="svg-inline--fa fa-code servicesIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"></path></svg></h4>
+                        </div>
+                        <h2 class="font-font_grotesk font-semibold text-30xl leading-34 text-[#1baa80]">Web Development</h2>
+                        <p class="font-font_grotesk font-normal text-secondaryColor text-base leading-7 pt-4">Web development is the process of creating and maintaining websites and web applications. It involves front-end development, interactive aspects using HTML, CSS, and JavaScript.</p>
+                    </div>
+
+                    <div class="lg:w-410 w-full bg-white px-6 pt-2 pb-8 rounded-R_15 lg:mt-[60px]">
+                        <div class="relative">
+                            <span class="inline-block text-[85px] text-secondaryColor text-opacity-15 font-font_grotesk font-semibold animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-reg-users)] before:content-[counter(num)]"></span>        
+                            <h4 class="absolute top-1/2 left-0 text-primaryColor transform -translate-y-1/2"><svg class="w-10 h-10" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code" class="svg-inline--fa fa-code servicesIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"></path></svg></h4>
+                        </div>
+                        <h2 class="font-font_grotesk font-semibold text-30xl leading-34 text-[#1baa80]">PHP Development</h2>
+                        <p class="font-font_grotesk font-normal text-secondaryColor text-base leading-7 pt-4">PHP is a powerful server-side scripting language widely used for web development. It enables developers to create dynamic, handle form submissions, manage databases.</p>
+                    </div>
+
+                    <div class="lg:w-410 w-full bg-white px-6 pt-2 pb-8 rounded-R_15">
+                        <div class="relative">
+                            <span class="inline-block text-[85px] text-secondaryColor text-opacity-15 font-font_grotesk font-semibold  animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-percent)] before:content-[counter(num)]"></span>        
+                            <h4 class="absolute top-1/2 left-[20px] text-primaryColor transform -translate-y-1/2"><svg class="w-10 h-10" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code" class="svg-inline--fa fa-code servicesIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"></path></svg></h4>
+                        </div>
+                        <h2 class="font-font_grotesk font-semibold text-30xl leading-34 text-[#1baa80]">React JS</h2>
+                        <p class="font-font_grotesk font-normal text-secondaryColor text-base leading-7 pt-4">React.js is a popular JavaScript library for building dynamic and interactive user interfaces, particularly for single-page applications. It follows a component-based architecture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Area End Here -->
+
+    <!-- Projects Area Start Here -->
+    <section id="projects" class="lg:mt-[150px] md:mt-20 mt-10">
+        <div class="container">
+            <div class="text-center relative">
+                <h4
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true"
+                class="font-font_grotesk text-secondaryColor text-opacity-5 font-semibold uppercase lg:text-[140px] md:text-118xl text-58xl leading-58 md:leading-118 lg:leading-[140px]">Portfolio</h4>
+                <p class="w-full absolute top-1/2 left-1/2 lg:text-58xl md:text-44xl text-30xl leading-40 md:leading-54 lg:leading-58 text-primaryColor font-font_grotesk font-semibold transform -translate-x-1/2 -translate-y-1/2">My<span class="text-[#1baa80]"> Works</span></p>
+            </div>
+            <div class="md:mt-[70px] mt-10">
+                <div class="flex lg:flex-nowrap flex-wrap justify-center lg:gap-7 gap-5">
+                    <a href="#" id="all-link" data-section="all" class="inline-block department-button font-font_grotesk font-medium text-xl leading-8 text-primaryColor">All</a>
+                    <a href="#" id="medical-link" data-section="medical" class="inline-block department-button font-font_grotesk font-medium text-xl leading-8 text-primaryColor">Medical</a>
+                    <a href="#" id="agency-link" data-section="agency" class="inline-block department-button font-font_grotesk font-medium text-xl leading-8 text-primaryColor">Agency</a>
+                    <a href="#" id="edu-link" data-section="edu" class="inline-block department-button font-font_grotesk font-medium text-xl leading-8 text-primaryColor">Education</a>
+                    <a href="#" id="estate-link" data-section="estate" class="inline-block department-button font-font_grotesk font-medium text-xl leading-8 text-primaryColor">Real Estate</a>
+                </div>
+                <div class="md:mt-[70px] mt-10">
+                    <div id="all" class="collapsible block">
+                        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/real-1.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://5fe206db.homenest-html.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/lens-craft.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://baa2138c.lenscraft-html.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/e-learning.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://elearning-website-one.vercel.app/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/aid.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://b88be8db.unityaid-html.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/mend.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://3ef57a97.mend-73o.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/real.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://3922757b.chicnest.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/click.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://756ff9d1.clickrank.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/pixel.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://e5420206.pixelhub-html.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/business.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://sanjida-sabiha.github.io/Corporate-Website/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="medical" class="collapsible hidden">
+                        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/aid.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://b88be8db.unityaid-html.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/medical.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://sanjida-sabiha.github.io/Novena-Website/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/care.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://83c0b9ed.carepro-html.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="agency" class="collapsible hidden">
+                        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/lens-craft.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://baa2138c.lenscraft-html.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/mend.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://3ef57a97.mend-73o.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/pixel.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://e5420206.pixelhub-html.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/shanChie.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://www.shanchie.com/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/click.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://756ff9d1.clickrank.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/tech-startup.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://sanjida-sabiha.github.io/Hablu-Website/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/business.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://sanjida-sabiha.github.io/Corporate-Website/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="edu" class="collapsible hidden">
+                        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/e-learning.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://elearning-website-one.vercel.app/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/edu.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://c48e052d.teachly.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="estate" class="collapsible hidden">
+                        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/real.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://3922757b.chicnest.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/real-1.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://5fe206db.homenest-html.pages.dev/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-md group overflow-hidden">
+                                <img class="h-full" src="assets/img/project/real-2.png" alt="">
+                                <div class="absolute top-2 left-2 right-2 bottom-2 bg-secondaryColor/10 scale-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:backdrop-blur-md">
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <div class="bg-primaryColor border border-primaryColor flex justify-center items-center rounded-full w-14 h-14 relative z-20">
+                                            <a href="https://sanjida-sabiha.github.io/Real-Estate/" target="_blank">
+                                                <svg class="w-7 h-7" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Area End Here -->
+
+    <!-- Reviews Area Start Here -->
+    <section id="review" class="lg:mt-[150px] md:mt-20 mt-10 bg-[#1baa80] bg-opacity-15">
+        <div class="container">
+            <div class="lg:py-[100px] py-10">
+                <div class="text-center relative">
+                    <h4
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    data-aos-offset="20"
+                    data-aos-once="true"
+                    class="font-font_grotesk text-secondaryColor text-opacity-5 font-semibold uppercase lg:text-[140px] md:text-118xl text-58xl leading-58 md:leading-118 lg:leading-[140px]">Reviews</h4>
+                    <p class="w-full absolute top-1/2 left-1/2 lg:text-58xl md:text-44xl text-30xl leading-40 md:leading-54 lg:leading-58 text-primaryColor font-font_grotesk font-semibold transform -translate-x-1/2 -translate-y-1/2"><span class="text-[#1baa80]">People</span> Said</p>
+                </div>
+
+                <div class="flex lg:flex-row flex-col md:justify-end justify-center items-center md:items-end">
+                    <!-- Navigation buttons and pagination -->
+                    <div class="flex justify-between items-center gap-[75px] lg:mt-[70px] mt-10">
+                        <button class="group flex items-center gap-4 rounded-[100px]" aria-label="Previous slide" id="slider-previous-unique">
+                            <h2 class="font-font_grotesk font-medium text-lg leading-8 text-primaryColor">Previous</h2>
+                            <div class="w-8 h-0.5 bg-primaryColor"></div>
+                        </button>
+                        <button class="group flex items-center gap-4 rounded-[100px]" aria-label="Next slide" id="slider-next-unique">
+                            <div class="w-8 h-0.5 bg-primaryColor"></div>
+                            <h2 class="font-font_grotesk font-medium text-lg leading-8 text-primaryColor">Next</h2>
+                        </button>
+                    </div>
+                </div>
+                <div class="overflow-hidden unique md:mt-20 mt-8">
+                    <div class="swiper-wrapper ">
+                        
+                        <div class="swiper-slide">
+                            <div class="md:flex xl:gap-14 md:gap-5 items-start">
+                                <svg class="lg:w-[20.5rem] md:w-14 md:block hidden" width="54" height="44" viewBox="0 0 54 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.639 4.95648C18.1803 7.86554 14.2361 12.5322 13.3743 18.1476C13.039 20.333 12.7035 24.1941 17.4735 25.0683C21.8359 25.8678 26.7899 33.0817 20.8274 40.731C17.8875 44.5027 6.52854 47.2876 1.44935 35.6316C-1.40768 29.0751 -1.97908 12.9024 18.5915 0.663657C20.7951 -0.647514 24.2227 -0.064707 22.3181 2.84915C21.9697 3.38207 21.37 4.0916 20.639 4.95648Z" fill="black"/>
+                                    <path d="M51.0616 4.95648C48.6028 7.86554 44.6586 12.5322 43.7969 18.1476C43.4615 20.333 43.1261 24.1941 47.8961 25.0683C52.2584 25.8678 57.2125 33.0817 51.25 40.731C48.31 44.5027 36.9511 47.2876 31.8719 35.6316C29.0149 29.0751 28.4435 12.9024 49.014 0.663657C51.2176 -0.647514 54.6452 -0.064707 52.7406 2.84915C52.3923 3.38207 51.7926 4.09159 51.0616 4.95648Z" fill="black"/>
+                                </svg>
+                                <div class="md:flex items-end">
+                                    <p class="xl:w-[1070px] w-full font-font_grotesk text-center font-normal lg:text-38xl text-22xl leading-32 lg:leading-[48px] text-secondaryColor flex items-end">   
+                                        I had the pleasure of partnering with Sanjida Sabiha on a critical project, and her expertise was instrumental in its success. She is not only a skilled coder but also a collaborative team player. Her commitment to delivering top-notch solutions and  ability to troubleshoot challenges is amazing. I look forward to continuing to work together on future projects."
+                                    </p> 
+                                    <svg class="lg:w-14 w-4 md:block hidden" width="54" height="44" viewBox="0 0 54 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.361 39.0435C35.8197 36.1345 39.7639 31.4678 40.6257 25.8524C40.961 23.667 41.2965 19.8059 36.5265 18.9317C32.1641 18.1322 27.2101 10.9183 33.1726 3.26896C36.1125 -0.502743 47.4715 -3.28758 52.5506 8.36844C55.4077 14.9249 55.9791 31.0976 35.4085 43.3363C33.2049 44.6475 29.7773 44.0647 31.6819 41.1508C32.0303 40.6179 32.63 39.9084 33.361 39.0435Z" fill="black"/>
+                                        <path d="M2.93843 39.0435C5.39716 36.1345 9.34139 31.4678 10.2031 25.8524C10.5385 23.667 10.8739 19.8059 6.10393 18.9317C1.74156 18.1322 -3.21248 10.9183 2.75003 3.26896C5.69 -0.502743 17.0489 -3.28758 22.1281 8.36844C24.9851 14.9249 25.5565 31.0976 4.98596 43.3363C2.78239 44.6475 -0.645237 44.0647 1.2594 41.1508C1.60775 40.6179 2.20744 39.9084 2.93843 39.0435Z" fill="black"/>
+                                    </svg>
+                                </div>
+                            </div> 
+                            <div class="md:mt-8 mt-4 text-center">
+                                <h2 class="font-font_grotesk font-medium lg:text-38xl text-22xl leading-32 lg:leading-50 text-primaryColor">Nader Nihal Neep</h2>
+                                <span class="lg:pt-2 pt-1 block font-font_grotesk font-normal lg:text-30xl md:text-lg text-base leading-7 md:leading-8 lg:leading-40 text-secondaryColor">Software Engineer</span>
+                            </div> 
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="md:flex xl:gap-14 md:gap-5 items-start">
+                                <svg class="lg:w-[20.5rem] md:w-14 md:block hidden" width="54" height="44" viewBox="0 0 54 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.639 4.95648C18.1803 7.86554 14.2361 12.5322 13.3743 18.1476C13.039 20.333 12.7035 24.1941 17.4735 25.0683C21.8359 25.8678 26.7899 33.0817 20.8274 40.731C17.8875 44.5027 6.52854 47.2876 1.44935 35.6316C-1.40768 29.0751 -1.97908 12.9024 18.5915 0.663657C20.7951 -0.647514 24.2227 -0.064707 22.3181 2.84915C21.9697 3.38207 21.37 4.0916 20.639 4.95648Z" fill="black"/>
+                                    <path d="M51.0616 4.95648C48.6028 7.86554 44.6586 12.5322 43.7969 18.1476C43.4615 20.333 43.1261 24.1941 47.8961 25.0683C52.2584 25.8678 57.2125 33.0817 51.25 40.731C48.31 44.5027 36.9511 47.2876 31.8719 35.6316C29.0149 29.0751 28.4435 12.9024 49.014 0.663657C51.2176 -0.647514 54.6452 -0.064707 52.7406 2.84915C52.3923 3.38207 51.7926 4.09159 51.0616 4.95648Z" fill="black"/>
+                                </svg>
+                                <div class="md:flex items-end">
+                                    <p class="xl:w-[1070px] w-full font-font_grotesk text-center font-normal lg:text-38xl text-22xl leading-32 lg:leading-[48px] text-secondaryColor flex items-end">   
+                                        Working with Sabiha was a game-changer for our project. Her technical expertise, attention to detail, and problem-solving skills were exceptional. She delivered high-quality code within tight deadlines and went above and beyond to ensure the success of our project.
+                                    </p> 
+                                    <svg class="lg:w-14 w-4 md:block hidden" width="54" height="44" viewBox="0 0 54 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.361 39.0435C35.8197 36.1345 39.7639 31.4678 40.6257 25.8524C40.961 23.667 41.2965 19.8059 36.5265 18.9317C32.1641 18.1322 27.2101 10.9183 33.1726 3.26896C36.1125 -0.502743 47.4715 -3.28758 52.5506 8.36844C55.4077 14.9249 55.9791 31.0976 35.4085 43.3363C33.2049 44.6475 29.7773 44.0647 31.6819 41.1508C32.0303 40.6179 32.63 39.9084 33.361 39.0435Z" fill="black"/>
+                                        <path d="M2.93843 39.0435C5.39716 36.1345 9.34139 31.4678 10.2031 25.8524C10.5385 23.667 10.8739 19.8059 6.10393 18.9317C1.74156 18.1322 -3.21248 10.9183 2.75003 3.26896C5.69 -0.502743 17.0489 -3.28758 22.1281 8.36844C24.9851 14.9249 25.5565 31.0976 4.98596 43.3363C2.78239 44.6475 -0.645237 44.0647 1.2594 41.1508C1.60775 40.6179 2.20744 39.9084 2.93843 39.0435Z" fill="black"/>
+                                    </svg>
+                                </div>
+                            </div> 
+                            <div class="md:mt-8 mt-4 text-center">
+                                <h2 class="font-font_grotesk font-medium lg:text-38xl text-22xl leading-32 lg:leading-50 text-primaryColor">Faisal Mohammed</h2>
+                                <span class="lg:pt-2 pt-1 block font-font_grotesk font-normal lg:text-30xl md:text-lg text-base leading-7 md:leading-8 lg:leading-40 text-secondaryColor">Software Developer</span>
+                            </div> 
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="md:flex xl:gap-14 md:gap-5 items-start">
+                                <svg class="lg:w-[20.5rem] md:w-14 md:block hidden" width="54" height="44" viewBox="0 0 54 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.639 4.95648C18.1803 7.86554 14.2361 12.5322 13.3743 18.1476C13.039 20.333 12.7035 24.1941 17.4735 25.0683C21.8359 25.8678 26.7899 33.0817 20.8274 40.731C17.8875 44.5027 6.52854 47.2876 1.44935 35.6316C-1.40768 29.0751 -1.97908 12.9024 18.5915 0.663657C20.7951 -0.647514 24.2227 -0.064707 22.3181 2.84915C21.9697 3.38207 21.37 4.0916 20.639 4.95648Z" fill="black"/>
+                                    <path d="M51.0616 4.95648C48.6028 7.86554 44.6586 12.5322 43.7969 18.1476C43.4615 20.333 43.1261 24.1941 47.8961 25.0683C52.2584 25.8678 57.2125 33.0817 51.25 40.731C48.31 44.5027 36.9511 47.2876 31.8719 35.6316C29.0149 29.0751 28.4435 12.9024 49.014 0.663657C51.2176 -0.647514 54.6452 -0.064707 52.7406 2.84915C52.3923 3.38207 51.7926 4.09159 51.0616 4.95648Z" fill="black"/>
+                                </svg>
+                                <div class="md:flex items-end">
+                                    <p class="xl:w-[1070px] w-full font-font_grotesk text-center font-normal lg:text-38xl text-22xl leading-32 lg:leading-[48px] text-secondaryColor flex items-end">   
+                                        Having Sabiha on our development team has significantly enhanced our ability to deliver robust solutions. Her technical proficiency, combined with a strong work ethic, has consistently resulted in successful project outcomes. She is adaptable, a quick learner, and a true asset to our team. We appreciate their dedication and look forward to their continued contributions.
+                                    </p> 
+                                    <svg class="lg:w-14 w-4 md:block hidden" width="54" height="44" viewBox="0 0 54 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.361 39.0435C35.8197 36.1345 39.7639 31.4678 40.6257 25.8524C40.961 23.667 41.2965 19.8059 36.5265 18.9317C32.1641 18.1322 27.2101 10.9183 33.1726 3.26896C36.1125 -0.502743 47.4715 -3.28758 52.5506 8.36844C55.4077 14.9249 55.9791 31.0976 35.4085 43.3363C33.2049 44.6475 29.7773 44.0647 31.6819 41.1508C32.0303 40.6179 32.63 39.9084 33.361 39.0435Z" fill="black"/>
+                                        <path d="M2.93843 39.0435C5.39716 36.1345 9.34139 31.4678 10.2031 25.8524C10.5385 23.667 10.8739 19.8059 6.10393 18.9317C1.74156 18.1322 -3.21248 10.9183 2.75003 3.26896C5.69 -0.502743 17.0489 -3.28758 22.1281 8.36844C24.9851 14.9249 25.5565 31.0976 4.98596 43.3363C2.78239 44.6475 -0.645237 44.0647 1.2594 41.1508C1.60775 40.6179 2.20744 39.9084 2.93843 39.0435Z" fill="black"/>
+                                    </svg>
+                                </div>
+                            </div> 
+                            <div class="md:mt-8 mt-4 text-center">
+                                <h2 class="font-font_grotesk font-medium lg:text-38xl text-22xl leading-32 lg:leading-50 text-primaryColor">Abdullah Nahian</h2>
+                                <span class="lg:pt-2 pt-1 block font-font_grotesk font-normal lg:text-30xl md:text-lg text-base leading-7 md:leading-8 lg:leading-40 text-secondaryColor">Frontend Developer</span>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews Area End Here -->
+
+    <!-- Contact Area Start Here -->
+    <section id="contact" class="lg:mt-[150px] md:mt-20 mt-10">
+        <div class="container">
+            <div class="text-center relative">
+                <h4
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-offset="10"
+                data-aos-once="true"
+                class="font-font_grotesk text-secondaryColor text-opacity-5 font-semibold uppercase lg:text-[140px] md:text-118xl text-58xl leading-58 md:leading-118 lg:leading-[140px]">Contact</h4>
+                <p class="w-full absolute top-1/2 left-1/2 lg:text-58xl md:text-44xl text-30xl leading-40 md:leading-54 lg:leading-58 text-primaryColor font-font_grotesk font-semibold transform -translate-x-1/2 -translate-y-1/2">Get<span class="text-[#1baa80]"> In </span>Touch</p>
+            </div>
+            <div class="grid xl:grid-cols-2 grid-cols-1 gap-[40px] md:mt-[70px] mt-10">
+                <div class="">
+                    <form>
+                        <div class="flex xl:flex-row flex-col gap-7">
+                            <div>
+                                <input class="xl:w-[290px] w-full focus:outline-none bg-transparent placeholder:text-primaryColor text-primaryColor font-normal font-font_grotesk text-base leading-7" type="text" placeholder="Name">
+                                <span class="w-full border-b border-b-primaryColor block mt-6"></span>
+                            </div>
+                            <div>
+                                <input class="xl:w-[290px] w-full focus:outline-none bg-transparent placeholder:text-primaryColor text-primaryColor font-normal font-font_grotesk text-base leading-7" type="email" placeholder="Email">
+                                <span class="w-full border-b border-b-primaryColor block mt-6"></span>
+                            </div>
+                        </div>
+                        <div class="mt-12">
+                            <textarea class="w-full focus:outline-none bg-transparent placeholder:text-primaryColor text-primaryColor font-normal font-font_grotesk text-base leading-7 resize-none" placeholder="Message"></textarea>
+                            <span class="w-full border-b border-b-primaryColor block md:mt-24 mt-10"></span>
+                        </div>                            
+                        <button class="mt-8 relative h-[60px] md:w-44 w-full bg-transparent overflow-hidden border border-borderColor text-primaryColor transition-all duration-300 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-primaryColor before:duration-500 before:ease-out hover:text-white hover:before:h-40 hover:before:md:w-44 hover:before:w-full">
+                            <a href="#" class="font-font_grotesk md:inline-block block text-center font-medium text-lg leading-8 relative z-10 uppercase">Submit</a>
+                        </button>
+                    </form>
+                </div>
+                <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.8393816645203!2d91.85783137515348!3d24.903459777901173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750550047fcbba1%3A0x49feec8a3c828df9!2sAwe%20Design%20Studio!5e0!3m2!1sen!2sbd!4v1738477990195!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Area End Here -->
+
+    <!-- Footer Area Start Here -->
+    <footer class="lg:mt-[150px] md:mt-20 mt-10 bg-primaryColor">
+        <div class="container">
+            <div class="md:py-10 py-5">
+                <p class="font-font_grotesk font-medium text-center text-white md:text-lg text-base leading-7 md:leading-8">Copyright &copy; 2023 Sanjida. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End Here -->
+
+
+    
+    
+   
+    
+
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/aos_script.js"></script>
+    <script src="assets/js/collapse-script.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+</body>
+</html>
